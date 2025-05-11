@@ -1,0 +1,31 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+
+ 
+
+// | EXTRA1 | STN_S1 | STN_TL | STN_PL | STN_HL | STN_ST1 |   | STN_ST3 | STN_F  | STN_P  | STN_L  | STN_T  | STN_D  |
+// | EXTRA2 | STN_S2 | STN_KL | STN_WL | STN_RL | STN_ST2 |   | STN_ST4 | STN_R  | STN_B  | STN_G  | STN_S  | STN_Z  |
+//                            | NONE   |  STN_A |  STN_O |    | STN_E   | STN_U  |  NONE  |
+
+
+{
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &extra1     &kp STN_S1  &kp STN_TL  &kp STN_PL  &kp STN_HL  &kp STN_ST1
+                &extra2   &kp STN_S2  &kp STN_KL  &kp STN_WL  &kp STN_RL  &kp STN_ST2
+                &extra3   &kp STN_A   &kp STN_O   &none       &none       &none
+
+                &kp STN_ST3 &kp STN_F  &kp STN_P  &kp STN_L   &kp STN_T   &kp STN_D
+                &kp STN_ST4 &kp STN_R  &kp STN_B  &kp STN_G   &kp STN_S   &kp STN_Z
+                &kp STN_E   &kp STN_U  &extra4    &none       &none       &none
+            >;
+        };
+    };
+};
+
+
+ 
