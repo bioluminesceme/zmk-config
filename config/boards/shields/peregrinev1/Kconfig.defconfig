@@ -1,0 +1,19 @@
+# Copyright (c) 2022 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_PEREGRINE_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Peregrine"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_PEREGRINE_LEFT
+
+if SHIELD_PEREGRINE_LEFT || SHIELD_PEREGRINE_RIGHT
+
+config ZMK_SPLIT
+    default y
+  
+endif # SHIELD_PEREGRINE_LEFT || SHIELD_PEREGRINE_RIGHT

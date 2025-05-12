@@ -9,19 +9,24 @@
 //                            | NONE   |  STN_A |  STN_O |    | STN_E   | STN_U  |  NONE  |
 
 
+// extra1 is copy 
+// extra2 is paste
+// extra3 is undo 
+// extra4 is save
+
 {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &extra1     &kp STN_S1  &kp STN_TL  &kp STN_PL  &kp STN_HL  &kp STN_ST1
-                &extra2   &kp STN_S2  &kp STN_KL  &kp STN_WL  &kp STN_RL  &kp STN_ST2
-                &extra3   &kp STN_A   &kp STN_O   &none       &none       &none
+                &kp LC(C)    &kp STN_S1  &kp STN_TL  &kp STN_PL  &kp STN_HL  &kp STN_ST1
+                &kp LC(V)   &kp STN_S2  &kp STN_KL  &kp STN_WL  &kp STN_RL  &kp STN_ST2
+                &kp LC(Z)   &kp STN_A   &kp STN_O   &none       &none       &none
 
                 &kp STN_ST3 &kp STN_F  &kp STN_P  &kp STN_L   &kp STN_T   &kp STN_D
                 &kp STN_ST4 &kp STN_R  &kp STN_B  &kp STN_G   &kp STN_S   &kp STN_Z
-                &kp STN_E   &kp STN_U  &extra4    &none       &none       &none
+                &kp STN_E   &kp STN_U  &kp LC(S)    &none       &none       &none
             >;
         };
     };

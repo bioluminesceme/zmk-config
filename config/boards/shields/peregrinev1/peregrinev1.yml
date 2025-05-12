@@ -1,0 +1,12 @@
+file_format: "1"
+id: peregrinev1
+name: Peregrine V1
+type: shield
+url: https://www.no.url
+
+features:
+  - keys
+
+siblings:
+  - peregrinev1_left
+  - peregrinev1_right
