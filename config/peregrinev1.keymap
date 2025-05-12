@@ -4,13 +4,13 @@
 
         default_layer {
             bindings = <
-                &none   &kp S   &kp T   &kp P   &kp H   &kp HASH
-                &none   &kp S   &kp K   &kp W   &kp R   &kp HASH
-                &none   &none   &none   &none   &kp A   &kp O 
+                &kp X   &kp S   &kp T   &kp P   &kp H   &kp HASH
+                &kp X   &kp S   &kp K   &kp W   &kp R   &kp HASH
+                &kp X   &kp X   &kp X   &kp X   &kp A   &kp O 
 
                 &kp HASH   &kp F   &kp P   &kp L   &kp T   &kp D
                 &kp HASH   &kp R   &kp B   &kp G   &kp S   &kp Z
-                &kp E   &kp U   &none   &none   &none   &none
+                &kp E      &kp U   &kp X   &kp X   &kp X   &kp X
             >;
         };
     };
