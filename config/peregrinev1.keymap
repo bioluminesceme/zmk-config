@@ -4,17 +4,14 @@
 
         default_layer {
             bindings = <
-                &none   &kp STN_S1  &kp STN_TL  &kp STN_PL  &kp STN_HL  &kp STN_ST1
-                &none   &kp STN_S2  &kp STN_KL  &kp STN_WL  &kp STN_RL  &kp STN_ST2
-                &none   &kp STN_A   &kp STN_O   &none       &none       &none
+                &none   &kp S   &kp T   &kp P   &kp H   &kp HASH
+                &none   &kp S   &kp K   &kp W   &kp R   &kp HASH
+                &none   &none   &none   &none   &kp A   &kp O 
 
-                &kp STN_ST3 &kp STN_F  &kp STN_P  &kp STN_L   &kp STN_T   &kp STN_D
-                &kp STN_ST4 &kp STN_R  &kp STN_B  &kp STN_G   &kp STN_S   &kp STN_Z
-                &kp STN_E   &kp STN_U  &none  &none       &none       &none
+                &kp HASH   &kp F   &kp P   &kp L   &kp T   &kp D
+                &kp HASH   &kp R   &kp B   &kp G   &kp S   &kp Z
+                &kp E   &kp U   &none   &none   &none   &none
             >;
         };
     };
 };
-
-
- 
